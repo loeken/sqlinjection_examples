@@ -16,7 +16,7 @@ create database sqlinjection_examples;
 use sqlinjection_examples;
 source schema.sql;
 
-
+example dork username=asdf' or '1'='1
 
 sqlmap -u http://localhost/sqlinjection_examples/example1.php?username= --dbs
 
