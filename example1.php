@@ -1,7 +1,9 @@
 <?php
 include('db.init.php');
 
-$username = mysql_real_escape_string($_GET['username']);
+// not so good:
+$username = $_GET['username'];
+//better: $username = mysql_real_escape_string($_GET['username']);
 
 $sql = "SELECT * from user WHERE username='$username'";
 
