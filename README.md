@@ -6,7 +6,7 @@ use mysql
 update user set password=PASSWORD("changeme") where User='root';
 flush privileges;
 
-then http://localhost/phpmyadmin/
+then http://localhost/phpmyadmin/ and import the schema
 
 
 sqlmap -u http://localhost/sqlinjection_examples/example1.php?username= --dbs
